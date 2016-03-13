@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="view/css/styles.css">
+
+    <script type="text/javascript" src="view/js/addNote.js"></script>
+    <script type="text/javascript" src="view/js/findNote.js"></script>
+    <script type="text/javascript" src="view/js/loadNotes.js"></script>
+    <script type="text/javascript" src="view/js/deleteNote.js"></script>
+    <script type="text/javascript" src="view/js/updateNote.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Currency convertor</title>
+  </head>
+  <!-- check if doc is up to date, load data and lastUpdate from xml document -->
+  <body onload="loadNotes();">
+    <div class = "container">
+      <div class = "header">
+        <div class="topLine"></div>
+        <div class="titleArea title">NOTES</div>
+      </div>
+      <div class="main">
+        <div class="selectionArea">
+          <div class="new">
+            <input type="button" class="newButton" value="ADD" name="newButton" onclick="newNote();">
+          </div>
+          <div class="find">
+            <input type="button" class="findButton" value="FIND" name="findButton" onclick="findNote();">
+          </div>
+        </div>
+        <div id="onNewClick"></div>
+        <div id="onFindClick"></div>
+        <div id="onLoad"></div>
+      </div>
+      <div class="footer">
+      </div>
+    </div>
+  </body>
+</html>
